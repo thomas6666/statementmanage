@@ -1,0 +1,16 @@
+/******************************************************
+inputmagnifier.css - v1.0
+2016 @wanglei
+******************************************************/
+.magnifier {
+  position: absolute;
+  display: none;
+  padding: 10px;
+  height: auto;
+  width: auto;
+  background-color: #dff0d8;
+  font-size: 21px;
+  color: #3c763d;
+  white-space:nowrap;
+  z-index: 999;
+}

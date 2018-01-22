@@ -1,0 +1,9 @@
+require(["domReady"],function(domReady){
+	domReady(function(){
+		window.setTimeout(function(){
+		  if(window.__karma__){
+		     window.__karma__.start();
+		  }
+		},500);
+	});
+});

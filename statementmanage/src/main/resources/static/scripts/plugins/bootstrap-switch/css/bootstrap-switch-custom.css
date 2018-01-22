@@ -1,0 +1,123 @@
+/* ========================================================================
+ * bootstrap-switch-custom - v1.0
+ * ========================================================================
+ * @wanglei 2016-03
+ * ========================================================================
+ */
+
+.bootstrap-switch {
+  border-radius: 20px;
+  width: 40px !important;
+}
+.bootstrap-switch .bootstrap-switch-handle-on, 
+.bootstrap-switch .bootstrap-switch-handle-off {
+  opacity: 0;
+  width: 15px !important;
+}
+.bootstrap-switch .bootstrap-switch-label {
+  width: 22px !important;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 20px !important;
+  box-shadow: 1px 1px 2px #cccccc;
+}
+.bootstrap-switch.bootstrap-switch-animate .bootstrap-switch-container {
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+}
+.bootstrap-switch.bootstrap-switch-on .bootstrap-switch-container {
+  background-color: #64dbc0;
+}
+/*off状态下，开关按钮bootstrap-switch-label的位置调整*/
+.bootstrap-switch.bootstrap-switch-off .bootstrap-switch-container {
+  margin-left: -15px !important;
+}
+/*去掉focused 样式*/
+.bootstrap-switch.bootstrap-switch-focused {
+  border-color: #cccccc;
+  box-shadow: none;
+}
+.bootstrap-switch .bootstrap-switch-handle-on,
+.bootstrap-switch .bootstrap-switch-handle-off,
+.bootstrap-switch .bootstrap-switch-label {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+/*Disabled and readonly*/
+.bootstrap-switch.bootstrap-switch-disabled,
+.bootstrap-switch.bootstrap-switch-readonly,
+.bootstrap-switch.bootstrap-switch-indeterminate {
+  opacity: .5;
+  filter: alpha(opacity=50);
+  cursor: not-allowed !important;
+}
+.bootstrap-switch.bootstrap-switch-disabled .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-readonly .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-indeterminate .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-disabled .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-readonly .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-indeterminate .bootstrap-switch-handle-off {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  cursor: not-allowed !important;
+}
+.bootstrap-switch.bootstrap-switch-disabled .bootstrap-switch-label,
+.bootstrap-switch.bootstrap-switch-readonly .bootstrap-switch-label,
+.bootstrap-switch.bootstrap-switch-indeterminate .bootstrap-switch-label {
+  opacity: .5;
+  filter: alpha(opacity=50);
+  cursor: not-allowed !important;
+}
+
+
+/***
+switch-normal
+***/
+.bootstrap-switch-normal {
+  width: 40px !important;
+}
+.bootstrap-switch.bootstrap-switch-normal .bootstrap-switch-handle-on, 
+.bootstrap-switch.bootstrap-switch-normal .bootstrap-switch-handle-off {
+  width: 15px !important;
+}
+.bootstrap-switch.bootstrap-switch-normal .bootstrap-switch-label {
+  width: 22px !important;
+}
+/*off状态下，开关按钮bootstrap-switch-label的位置调整*/
+.bootstrap-switch.bootstrap-switch-normal.bootstrap-switch-off .bootstrap-switch-container {
+  margin-left: -15px !important;
+}
+.bootstrap-switch.bootstrap-switch-normal .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-normal .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-normal .bootstrap-switch-label {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/***
+switch-large
+***/
+.bootstrap-switch-large {
+  width: 60px !important;
+}
+.bootstrap-switch.bootstrap-switch-large .bootstrap-switch-handle-on, 
+.bootstrap-switch.bootstrap-switch-large .bootstrap-switch-handle-off {
+  width: 10px !important;
+}
+.bootstrap-switch.bootstrap-switch-large .bootstrap-switch-label {
+  width: 34px !important;
+}
+/*off状态下，开关按钮bootstrap-switch-label的位置调整*/
+.bootstrap-switch.bootstrap-switch-large.bootstrap-switch-off .bootstrap-switch-container {
+  margin-left: -24px !important;
+}
+.bootstrap-switch.bootstrap-switch-large .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-large .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-large .bootstrap-switch-label {
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 20px;
+}
